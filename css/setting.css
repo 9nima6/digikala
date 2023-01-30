@@ -5,6 +5,12 @@
     outline: 0;
     box-sizing: border-box;
 }
-:root{ 
-    --back:#909090;
+@font-face {
+    font-family: 'iranYekan';
+    src: url('../fonts/IRANYekanWebRegular.woff'); 
 }
+@font-face {
+    font-family: 'iranYekanBold';
+    src: url('../fonts/IRANYekanWebBold.woff'); 
+}
+

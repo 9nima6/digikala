@@ -1,9 +1,9 @@
 @import url(setting.css);
 /*initialize first page */
 @import url(firstPage/2xl/2xl.css) screen and (min-width:1400px);
-@import url(firstPage/xl/xl.css) screen and (min-width:1200px) and (max-width:1400px);
+/* @import url(firstPage/xl/xl.css) screen and (min-width:1200px) and (max-width:1400px);
 @import url(firstPage/lg/lg.css) screen and (min-width:992px) and (max-width:1200px);
 @import url(firstPage/med/md.css) screen and (min-width:768px) and (max-width:992px);
 @import url(firstPage/sm/sm.css) screen and (min-width:576px) and (max-width:768px);
-@import url(firstPage/xs/xs.css) screen and (max-width:576px);
+@import url(firstPage/xs/xs.css) screen and (max-width:576px); */
 /* end first page */

@@ -4,7 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "2xlHeaderSass":"node-sass -w scss/firstPage/2xl/header.scss -o css/firstPage/2xl/ -r",
+    "2xlHeaderSassMinify":"node-sass -w scss/firstPage/2xl/header.scss -o css/firstPage/2xl/ -r --output-style compressed",
+    "2xlMenuSass":"node-sass -w scss/firstPage/2xl/menu.scss -o css/firstPage/2xl/ -r",
+    "2xlMenuSassMinify":"node-sass -w scss/firstPage/2xl/menu.scss -o css/firstPage/2xl/ -r --output-style compressed"
+
   },
   "keywords": [],
   "author": "",
@@ -12,6 +16,7 @@
   "dependencies": {
     "formik": "^2.2.9",
     "live-server": "^1.2.2",
+    "node-sass": "^8.0.0",
     "swiper": "^8.4.6"
   }
 }
