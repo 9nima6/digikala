@@ -7,7 +7,9 @@
     "2xlHeaderSass":"node-sass -w scss/firstPage/2xl/header.scss -o css/firstPage/2xl/ -r",
     "2xlHeaderSassMinify":"node-sass -w scss/firstPage/2xl/header.scss -o css/firstPage/2xl/ -r --output-style compressed",
     "2xlMenuSass":"node-sass -w scss/firstPage/2xl/menu.scss -o css/firstPage/2xl/ -r",
-    "2xlMenuSassMinify":"node-sass -w scss/firstPage/2xl/menu.scss -o css/firstPage/2xl/ -r --output-style compressed"
+    "2xlMenuSassMinify":"node-sass -w scss/firstPage/2xl/menu.scss -o css/firstPage/2xl/ -r --output-style compressed",
+    "2xlAdimageSass":"node-sass -w scss/firstPage/2xl/adimage.scss -o css/firstPage/2xl/ -r",
+    "2xlAdimageSassMinify":"node-sass -w scss/firstPage/2xl/adimage.scss -o css/firstPage/2xl/ -r --output-style compressed"
 
   },
   "keywords": [],
