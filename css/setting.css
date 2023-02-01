@@ -13,4 +13,14 @@
     font-family: 'iranYekanBold';
     src: url('../fonts/IRANYekanWebBold.woff'); 
 }
-
+body::-webkit-scrollbar{
+    width: 10px;
+}
+body::-webkit-scrollbar-track {
+    background: #F1F2F4;
+    border-radius: 10px;
+}
+body::-webkit-scrollbar-thumb {
+    background: #C3C3CE; 
+    border-radius: 10px;
+}
