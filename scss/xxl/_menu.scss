@@ -1,0 +1,399 @@
+div.menu {
+  width: 100%;
+  height: 40px;
+  padding: 0 16px;
+  position: absolute;
+  top: 125px;
+  border-bottom: 1px solid #3f4064;
+  > div.left {
+    width: 180px;
+    height: inherit;
+    float: left;
+    position: relative;
+    display: flex;
+    column-gap: 10px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    &:hover > div {
+      display: block;
+    }
+    > p {
+      font-size: 12px;
+      font-family: "iranYekan";
+      color: #3f4064;
+    }
+    > div {
+      border-radius: 4px;
+      width: inherit;
+      height: inherit;
+      background-color: #3f4064;
+      border: 1px solid #23254e;
+      color: #fff;
+      position: absolute;
+      top: 40px;
+      left: 0;
+      text-align: center;
+      display: none;
+      > p {
+        font-size: 12px;
+        font-family: "iranYekan";
+        line-height: 40px;
+      }
+    }
+  }
+  > div.right {
+    width: auto;
+    height: inherit;
+    float: right;
+    display: flex;
+    column-gap: 25px;
+    justify-content: flex-end;
+    align-items: center;
+    > div.extra {
+      width: inherit;
+      height: inherit;
+      display: flex;
+      column-gap: 25px;
+      justify-content: flex-end;
+      align-items: center;
+      font-size: 12px;
+      font-family: "iranYekan";
+      color: #5a5c7a;
+      > div {
+        width: inherit;
+        height: inherit;
+        position: relative;
+        display: flex;
+        column-gap: 5px;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        &::after {
+          content: "";
+          width: 0;
+          height: 2px;
+          background-color: red;
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          transition: 300ms;
+        }
+        &:hover::after {
+          width: 100%;
+        }
+      }
+      > div:nth-of-type(2) {
+        > span {
+          width: 1px;
+          height: 16px;
+          background-color: #d5d5d9;
+        }
+      }
+      > div:nth-of-type(6) {
+        > span:nth-of-type(2) {
+          width: 1px;
+          height: 16px;
+          background-color: #d5d5d9;
+          margin-left: 5px;
+        }
+      }
+    }
+    > div.productSelection {
+      width: inherit;
+      height: inherit;
+      display: flex;
+      position: relative;
+      column-gap: 6px;
+      justify-content: flex-end;
+      align-items: center;
+      font-size: 14px;
+      cursor: pointer;
+      font-family: "iranYekanBold";
+      color: #3f4064;
+      &::after {
+        content: "";
+        width: 0;
+        height: 2px;
+        background-color: red;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        transition: 300ms;
+      }
+      &:hover::after {
+        width: 100%;
+      }
+    }
+  }
+}
+//initialize div.cityover
+div.cityOverlay {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 100;
+  display: none;
+  transition: 300ms;
+  > div.wrapp {
+    width: 30vw;
+    height: 80vh;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 300ms;
+    border-radius: 8px;
+    overflow-x: hidden;
+    > nav {
+      width: inherit;
+      height: inherit;
+      position: relative;
+      overflow: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      border-radius: 8px;
+      overflow-x: hidden;
+
+      > div {
+        width: 100%;
+        margin-bottom: 1px;
+        padding: 15px 20px;
+        border-bottom: 1px solid#e7eaee;
+        cursor: pointer;
+        > span {
+          float: left;
+        }
+        > p {
+          float: right;
+          font-size: 16px;
+          font-family: "iranYekanBold";
+          color: #3f4064;
+        }
+      }
+      > div:nth-of-type(1) {
+        font-size: 20px;
+        border: unset;
+        font-family: "iranYekanBold";
+        padding-top: 20px;
+        font-weight: 700;
+        margin-bottom: 5px;
+        position: fixed;
+        top: 0;
+        background-color: #fff;
+        > span {
+          cursor: pointer;
+        }
+      }
+      > div:nth-of-type(2) {
+        width: 90%;
+        border: unset;
+        background-color: #e8ecf1;
+        padding: 1px;
+        position: fixed;
+        top: 60px;
+        left: 20px;
+      }
+      > div:nth-of-type(3) {
+        width: inherit;
+        height: 100px;
+      }
+      > div:nth-of-type(4) {
+        padding: 30px;
+        margin-top: 30px;
+        position: relative;
+        z-index: -100;
+        > p {
+          color: #19bfd3;
+          font-size: 10px;
+        }
+      }
+    }
+  }
+}
+//end div.cityover
+// initialize product selector
+div.back {
+  width: 100%;
+  height: 77vh;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top: 165px;
+  display: none;
+  z-index: 100;
+  > div.front {
+    width: 96%;
+    height: 86%;
+    position: absolute;
+    top: 20;
+    background-color: #fff;
+    left: 30px;
+    box-shadow: 3px 3px 3px gray;
+    font-family: "iranYekan";
+    border-radius: 0 10px 10px;
+    z-index: 100;
+    > div.right {
+      width: 16%;
+      height: 100%;
+      position: absolute;
+      right: 0;
+      overflow: auto;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      &::-webkit-scrollbar {
+        width: 10px;
+      }
+      &::-webkit-scrollbar-track {
+        background: #f1f2f4;
+        border-radius: 10px;
+      }
+      &::-webkit-scrollbar-thumb {
+        background: #c3c3ce;
+        border-radius: 10px;
+      }
+      > nav {
+        width: 100%;
+        display: block;
+        position: relative;
+        > ul {
+          width: 100%;
+          height: 100%;
+          list-style-type: none;
+          direction: rtl;
+          > li {
+            width: 100%;
+            padding: 15px 0;
+            cursor: pointer;
+            &:hover {
+              background-color: #f1f2f4;
+            }
+            &:hover > a {
+              color: red;
+            }
+            > a {
+              display: block;
+              width: 100%;
+              width: 100%;
+              color: #3f4064;
+              margin-right: 8px;
+              text-decoration: none;
+            }
+            > span {
+              margin-left: -4px;
+            }
+          }
+        }
+      }
+    }
+    > div.left {
+      width: 84%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      font-family: "iranYekan";
+      border-radius: 8px;
+      > div {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        overflow: auto;
+        background-color: #fff;
+        &::-webkit-scrollbar {
+          width: 10px;
+        }
+        &::-webkit-scrollbar-track {
+          background: #f1f2f4;
+          border-radius: 10px;
+        }
+        &::-webkit-scrollbar-thumb {
+          background: #c3c3ce;
+          border-radius: 10px;
+        }
+        > div {
+          width: 100%;
+          height: 60px;
+          padding: 15px;
+          position: relative;
+          direction: rtl;
+          > a {
+            display: block;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            text-decoration: none;
+            font-size: smaller;
+            color: #5f6188;
+          }
+        }
+        > nav {
+          width: 100%;
+          height: 100%;
+          display: block;
+          position: relative;
+          > ul {
+            width: 100%;
+            height: 100%;
+            list-style-type: none;
+            direction: rtl;
+            position: absolute;
+            right: 0;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            > li {
+              width: auto;
+              padding: 15px 0;
+              cursor: pointer;
+              margin-right: 10px;
+              &:hover > a {
+                color: red;
+              }
+              > a {
+                display: block;
+                width: 100%;
+                width: 100%;
+                margin-right: 8px;
+                text-decoration: none;
+                font-size: smaller;
+                color: #5f6188;
+              }
+            }
+            > li.redline {
+              font-size: larger;
+              font-weight: 700;
+              > a {
+                position: relative;
+                > span {
+                  display: block;
+                  height: 18px;
+                  width: 2px;
+                  background-color: red;
+                  position: absolute;
+                  top: 3px;
+                  right: -7px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// end product selector
+.active {
+  display: block !important;
+}
+.diactive {
+  z-index: 50  !important;
+}

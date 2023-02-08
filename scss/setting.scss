@@ -1,0 +1,26 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'iranYekan';
+    src: url('../fonts/IRANYekanWebRegular.woff'); 
+}
+@font-face {
+    font-family: 'iranYekanBold';
+    src: url('../fonts/IRANYekanWebBold.woff'); 
+}
+body::-webkit-scrollbar{
+    width: 10px;
+}
+body::-webkit-scrollbar-track {
+    background: #F1F2F4;
+    border-radius: 10px;
+}
+body::-webkit-scrollbar-thumb {
+    background: #C3C3CE;
+    border-radius: 10px;
+}

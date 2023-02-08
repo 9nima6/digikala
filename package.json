@@ -4,14 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "2xlAdimagSass": "node-sass -w scss/firstPage/2xl/adimage.scss -o css/firstPage/2xl/ -r",
-    "2xlAdimageSassMinify": "node-sass -w scss/firstPage/2xl/adimage.scss -o css/firstPage/2xl/ -r --output-style compressed",
-    "2xlHeaderSass": "node-sass -w scss/firstPage/2xl/header.scss -o css/firstPage/2xl/ -r",
-    "2xlHeaderSassMinify": "node-sass -w scss/firstPage/2xl/header.scss -o css/firstPage/2xl/ -r --output-style compressed",
-    "2xlMenuSass": "node-sass -w scss/firstPage/2xl/menu.scss -o css/firstPage/2xl/ -r",
-    "2xlMenuSassMinify": "node-sass -w scss/firstPage/2xl/menu.scss -o css/firstPage/2xl/ -r --output-style compressed",
-    "2xlSwiperSass": "node-sass -w scss/firstPage/2xl/swiper.scss -o css/firstPage/2xl/ -r",
-    "2xlSwiperSassMinify": "node-sass -w scss/firstPage/2xl/swiper.scss -o css/firstPage/2xl/ -r --output-style compressed"
+    "sass": "node-sass -w scss/ -o css/ -r --output-style compressed",
+    "setting": "node-sass -w scss/setting.scss -o css/setting -r --output-style compressed",
+    "xxl": "node-sass -w scss/xxl.scss -o css/xxl -r --output-style compressed"
   },
   "keywords": [],
   "author": "",
